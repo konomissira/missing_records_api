@@ -47,7 +47,8 @@ class Record(Base):
     record_id = Column(Integer, nullable=False, index=True)
     batch_id = Column(Integer, ForeignKey("batches.id"), nullable=False, index=True)
     status = Column(Enum(RecordStatus), nullable=False, default=RecordStatus.EXPECTED)
-    metadata = Column(Text, nullable=True)  # Optional JSON-like metadata
+    #metadata = Column(Text, nullable=True)  # Optional JSON-like metadata
+    record_metadata = Column(Text, nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
