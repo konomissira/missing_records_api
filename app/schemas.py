@@ -30,7 +30,7 @@ class RecordCreate(BaseModel):
     """Schema for creating a single record"""
     record_id: int = Field(..., description="ID of the record to track")
     status: RecordStatus = Field(..., description="Record status (expected or processed)")
-    metadata: Optional[str] = Field(None, description="Optional metadata")
+    record_metadata: Optional[str] = Field(None, description="Optional metadata")
 
 
 class RecordBulkUpload(BaseModel):
@@ -45,7 +45,8 @@ class RecordResponse(BaseModel):
     record_id: int
     batch_id: int
     status: RecordStatus
-    metadata: Optional[str]
+    #metadata: Optional[str]
+    record_metadata: Optional[str]
     created_at: datetime
     updated_at: Optional[datetime]
 

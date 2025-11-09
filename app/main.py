@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.database import engine, Base
+from app.api.endpoints import router
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
@@ -12,6 +13,9 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc"
 )
+
+# Include API router
+app.include_router(router)
 
 
 @app.get("/")
