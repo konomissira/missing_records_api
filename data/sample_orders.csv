@@ -1,0 +1,18 @@
+record_id,status,record_metadata
+10001,expected,Order 10001 - Customer A - $150.00
+10002,expected,Order 10002 - Customer B - $225.50
+10003,expected,Order 10003 - Customer C - $89.99
+10004,expected,Order 10004 - Customer D - $320.00
+10005,expected,Order 10005 - Customer E - $175.25
+10006,expected,Order 10006 - Customer F - $450.00
+10007,expected,Order 10007 - Customer G - $99.99
+10008,expected,Order 10008 - Customer H - $275.80
+10009,expected,Order 10009 - Customer I - $150.00
+10010,expected,Order 10010 - Customer J - $399.99
+10001,processed,Order 10001 - Shipped via FedEx
+10002,processed,Order 10002 - Shipped via UPS
+10003,processed,Order 10003 - Shipped via USPS
+10005,processed,Order 10005 - Shipped via FedEx
+10007,processed,Order 10007 - Shipped via UPS
+10008,processed,Order 10008 - Shipped via FedEx
+10010,processed,Order 10010 - Shipped via UPS

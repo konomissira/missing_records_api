@@ -1,0 +1,96 @@
+{
+  "batch": {
+    "batch_name": "daily_orders_2025_11_11",
+    "record_type": "order",
+    "description": "Daily order processing batch for November 1, 2025"
+  },
+  "expected_records": [
+    {
+      "record_id": 10001,
+      "status": "expected",
+      "record_metadata": "Order 10001 - Customer A - £150.00"
+    },
+    {
+      "record_id": 10002,
+      "status": "expected",
+      "record_metadata": "Order 10002 - Customer B - £225.50"
+    },
+    {
+      "record_id": 10003,
+      "status": "expected",
+      "record_metadata": "Order 10003 - Customer C - £89.99"
+    },
+    {
+      "record_id": 10004,
+      "status": "expected",
+      "record_metadata": "Order 10004 - Customer D - £320.00"
+    },
+    {
+      "record_id": 10005,
+      "status": "expected",
+      "record_metadata": "Order 10005 - Customer E - £175.25"
+    },
+    {
+      "record_id": 10006,
+      "status": "expected",
+      "record_metadata": "Order 10006 - Customer F - £450.00"
+    },
+    {
+      "record_id": 10007,
+      "status": "expected",
+      "record_metadata": "Order 10007 - Customer G - £99.99"
+    },
+    {
+      "record_id": 10008,
+      "status": "expected",
+      "record_metadata": "Order 10008 - Customer H - £275.80"
+    },
+    {
+      "record_id": 10009,
+      "status": "expected",
+      "record_metadata": "Order 10009 - Customer I - £150.00"
+    },
+    {
+      "record_id": 10010,
+      "status": "expected",
+      "record_metadata": "Order 10010 - Customer J - £399.99"
+    }
+  ],
+  "processed_records": [
+    {
+      "record_id": 10001,
+      "status": "processed",
+      "record_metadata": "Order 10001 - Shipped via FedEx"
+    },
+    {
+      "record_id": 10002,
+      "status": "processed",
+      "record_metadata": "Order 10002 - Shipped via UPS"
+    },
+    {
+      "record_id": 10003,
+      "status": "processed",
+      "record_metadata": "Order 10003 - Shipped via USPS"
+    },
+    {
+      "record_id": 10005,
+      "status": "processed",
+      "record_metadata": "Order 10005 - Shipped via FedEx"
+    },
+    {
+      "record_id": 10007,
+      "status": "processed",
+      "record_metadata": "Order 10007 - Shipped via UPS"
+    },
+    {
+      "record_id": 10008,
+      "status": "processed",
+      "record_metadata": "Order 10008 - Shipped via FedEx"
+    },
+    {
+      "record_id": 10010,
+      "status": "processed",
+      "record_metadata": "Order 10010 - Shipped via UPS"
+    }
+  ]
+}
